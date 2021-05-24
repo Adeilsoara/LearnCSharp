@@ -1,0 +1,16 @@
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.csprojAssemblyReference.cache
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.AssemblyInfoInputs.cache
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.AssemblyInfo.cs
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.csproj.CoreCompileInputs.cache
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\CursoCSharp.exe
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\CursoCSharp.deps.json
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\CursoCSharp.runtimeconfig.json
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\CursoCSharp.runtimeconfig.dev.json
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\CursoCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\ref\CursoCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\CursoCSharp.pdb
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\ref\CursoCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.pdb
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.genruntimeconfig.cache
