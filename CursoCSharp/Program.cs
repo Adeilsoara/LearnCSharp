@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using CursoCSharp.Fundamentos;
-using CursoCSharp.EstruturasDeControle
+using CursoCSharp.EstruturasDeControle;
 namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
@@ -25,6 +25,7 @@ namespace CursoCSharp {
 
                 //Estruras de Controle
                 {"Estrutura IF - Estruturas de Controle", EstruturaIf.Executar},
+                {"Estrutura IF/ELSE - Estruturas de Controle", EstruturaIfElse.Executar},
 
             });
 
