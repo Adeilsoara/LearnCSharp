@@ -28,8 +28,8 @@ namespace CursoCSharp.OO {
             }
             return VelocidadeAtual;
         }
-
-        public int Acelerar() {
+        //virtual - permite que um método seja sobrescrito
+        public virtual int Acelerar() {
             return AlterarVelocidade(5);
         }
 
@@ -41,6 +41,21 @@ namespace CursoCSharp.OO {
         public Uno() : base(200) {
 
         }
+
+    public class Ferrari : Carro {
+            public Ferrari() : base(350) {
+
+            }
+
+            public override int Acelerar() {
+                return AlterarVelocidade(15);
+            }
+
+            //oculta o método da classe pai 
+            public new int Frear() {
+                return AlterarVelocidade(-15);
+            }
+        }
     }
     class Heranca {
         public static void Executar() {
@@ -49,6 +64,9 @@ namespace CursoCSharp.OO {
             Console.WriteLine(carro1.Acelerar());
             Console.WriteLine(carro1.Acelerar());
             Console.WriteLine(carro1.Frear());
+
+            Console.WriteLine("Ferrari...");
+          
         }
     }
 }
