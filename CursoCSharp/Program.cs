@@ -7,6 +7,7 @@ using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.Colecoes;
 using CursoCSharp.OO;
 using CursoCSharp.Excecoes;
+using CursoCSharp.API;
 namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
@@ -61,6 +62,9 @@ namespace CursoCSharp {
 
                  //Exceções
                  {"Excecoes -  Excecoes ", PrimeiraExcecoes.Executar},
+
+                 //Api
+                 {"Aquivos -  API ", PrimeiroArquivo.Executar},
 
             });
 
