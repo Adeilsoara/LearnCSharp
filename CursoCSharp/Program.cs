@@ -64,7 +64,8 @@ namespace CursoCSharp {
                  {"Excecoes -  Excecoes ", PrimeiraExcecoes.Executar},
 
                  //Api
-                 {"Aquivos -  API ", PrimeiroArquivo.Executar},
+                 {"Arquivos Escrita -  API ", PrimeiroArquivo.Executar},
+                 {"Arquivos Leitura -  API ", LendoArquivo.Executar},
 
             });
 
