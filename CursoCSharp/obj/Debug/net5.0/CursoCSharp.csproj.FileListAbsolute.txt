@@ -14,3 +14,6 @@ C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.dll
 C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\ref\CursoCSharp.dll
 C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.pdb
 C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.genruntimeconfig.cache
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\Encapsulamento.dll
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\bin\Debug\net5.0\Encapsulamento.pdb
+C:\Users\adeil\Documents\EstudarC#\CursoCSharp\obj\Debug\net5.0\CursoCSharp.csproj.CopyComplete

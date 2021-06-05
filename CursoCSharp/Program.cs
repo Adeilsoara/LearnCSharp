@@ -6,6 +6,7 @@ using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.Colecoes;
 using CursoCSharp.OO;
+using CursoCSharp.Excecoes;
 namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
@@ -57,6 +58,9 @@ namespace CursoCSharp {
                   //Orientação a Objetos
                  {"Herança -  OO ", Heranca.Executar},
                  {"Construtor This -  OO ", ConstrutorThis.Executar},
+
+                 //Exceções
+                 {"Excecoes -  Excecoes ", PrimeiraExcecoes.Executar},
 
             });
 
