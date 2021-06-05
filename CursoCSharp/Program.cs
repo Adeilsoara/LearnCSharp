@@ -8,6 +8,7 @@ using CursoCSharp.Colecoes;
 using CursoCSharp.OO;
 using CursoCSharp.Excecoes;
 using CursoCSharp.API;
+using CursoCSharp.TopicosAvancados;
 namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
@@ -66,6 +67,9 @@ namespace CursoCSharp {
                  //Api
                  {"Arquivos Escrita -  API ", PrimeiroArquivo.Executar},
                  {"Arquivos Leitura -  API ", LendoArquivo.Executar},
+                
+                //Topicos Avançados
+                {"LINQ1 - Topicos Avançados ", LINQ1.Executar},
 
             });
 
