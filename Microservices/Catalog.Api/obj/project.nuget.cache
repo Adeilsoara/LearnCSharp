@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "TgujosY699aS4S8eNpl8Bw6YzDcCd9KC5/PVFkBIK2LXNXsPodw9Hx8f/er7DkPZgMthxTIB1JvELOXRdUVs8g==",
+  "dgSpecHash": "Nrogt80M7FGGk9z4uSRIRGdhntspE9lz7biE/KFMl1FLzxCTGhoDIPAevvBeXV+6RThPuQY93Vtl/ka1WbcVng==",
   "success": true,
   "projectFilePath": "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Catalog.Api\\Catalog.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adeil\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\adeil\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\adeil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\adeil\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\mongodb.bson\\2.12.4\\mongodb.bson.2.12.4.nupkg.sha512",

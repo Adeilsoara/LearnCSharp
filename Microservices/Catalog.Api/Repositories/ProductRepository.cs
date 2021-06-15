@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Catalog.Api.Repositories {
     public class ProductRepository : IProductRepository {
-        private readonly IcatalogContext _context;
+        private readonly ICatalogContext _context;
 
-        public ProductRepository(IcatalogContext context) {
+        public ProductRepository(ICatalogContext context) {
             _context = context;
         }
 
