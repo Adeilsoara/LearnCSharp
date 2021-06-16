@@ -8,11 +8,13 @@ C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Ca
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\ref\Catalog.Api.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Catalog.Api.pdb
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\DnsClient.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Docker.DotNet.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\MongoDB.Bson.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\MongoDB.Driver.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\MongoDB.Driver.Core.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\SharpCompress.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -23,7 +25,6 @@ C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\ru
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
-C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.csprojAssemblyReference.cache
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.AssemblyInfoInputs.cache
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.AssemblyInfo.cs
@@ -39,3 +40,4 @@ C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Ca
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\ref\Catalog.Api.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.pdb
 C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.genruntimeconfig.cache
+C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.Api\obj\Debug\net5.0\Catalog.Api.csproj.AssemblyReference.cache
