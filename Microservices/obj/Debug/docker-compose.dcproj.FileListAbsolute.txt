@@ -19,3 +19,13 @@ C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Catalog.Api.pdb
 C:\Users\adeil\Documents\EstudarC#\Microservices\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\adeil\Documents\EstudarC#\Microservices\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\adeil\Documents\EstudarC#\Microservices\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Basket.Api.deps.json
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Basket.Api.runtimeconfig.json
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Basket.Api.runtimeconfig.dev.json
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Basket.Api.exe
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Basket.Api.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\StackExchange.Redis.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\bin\Debug\Basket.Api.pdb

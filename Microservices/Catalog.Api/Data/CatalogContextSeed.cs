@@ -15,7 +15,7 @@ namespace Catalog.Api.Data {
         private static IEnumerable<Product> GetMyProducts() {
             return new List<Product>() {
                 new Product() {
-                    Id = "2331dfdf43431231j",
+                    Id = "507f1f77bcf86cd799439011",
                     Name = "Iphone X2",
                     Description = "afffdfdafa",
                     Category = "Smartphone",
@@ -23,7 +23,7 @@ namespace Catalog.Api.Data {
                     Price = 3500
                 },
                 new Product() {
-                    Id = "2w131dfdf43431231j",
+                    Id = "507f1f77bcf86cd799433411",
                     Name = "Iphone 12",
                     Description = "afffdfdafa",
                     Category = "Smartphone",
