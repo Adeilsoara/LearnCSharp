@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z5u9mWz21dgwyW2/5Mqfdz5ftw3mKS/g2rwP4DDPfO3DcRXfDH4ZsYovWhQIiKB6nawE9poB/sTpNabZj5k9Dg==",
+  "dgSpecHash": "yYGL5vEWzfvemXu2Q4Jo6GcuQKosPTd4vJTMCKIyqW2xIkyTcGwz9SsYtrlYfs3D0o26ejhnzS3QivwNIPOBag==",
   "success": true,
   "projectFilePath": "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Basket.Api\\Basket.Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\adeil\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\pipelines.sockets.unofficial\\2.0.17\\pipelines.sockets.unofficial.2.0.17.nupkg.sha512",
     "C:\\Users\\adeil\\.nuget\\packages\\stackexchange.redis\\2.0.593\\stackexchange.redis.2.0.593.nupkg.sha512",
