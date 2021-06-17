@@ -34,3 +34,10 @@ services:
     ports:
       - "8001:80"
 
+
+  discount.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+

@@ -13,8 +13,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\adeil\Documents\EstudarC\Microservices\Basket.Api:/app
-      - C:\Users\adeil\Documents\EstudarC\Microservices:/src
+      - C:\Users\adeil\Documents\EstudarC#\Microservices\Basket.Api:/app
+      - C:\Users\adeil\Documents\EstudarC#\Microservices:/src
       - C:\Users\adeil\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\adeil\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
@@ -39,8 +39,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\adeil\Documents\EstudarC\Microservices\Catalog.API:/app
-      - C:\Users\adeil\Documents\EstudarC\Microservices:/src
+      - C:\Users\adeil\Documents\EstudarC#\Microservices\Catalog.API:/app
+      - C:\Users\adeil\Documents\EstudarC#\Microservices:/src
       - C:\Users\adeil\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\adeil\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
