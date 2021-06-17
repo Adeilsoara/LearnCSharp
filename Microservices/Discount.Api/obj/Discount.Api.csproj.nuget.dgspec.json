@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adeil\\Documents\\EstudarC#\\Discount.Api\\Discount.Api.csproj": {}
+    "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Discount.Api\\Discount.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adeil\\Documents\\EstudarC#\\Discount.Api\\Discount.Api.csproj": {
+    "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Discount.Api\\Discount.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adeil\\Documents\\EstudarC#\\Discount.Api\\Discount.Api.csproj",
+        "projectUniqueName": "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Discount.Api\\Discount.Api.csproj",
         "projectName": "Discount.Api",
-        "projectPath": "C:\\Users\\adeil\\Documents\\EstudarC#\\Discount.Api\\Discount.Api.csproj",
+        "projectPath": "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Discount.Api\\Discount.Api.csproj",
         "packagesPath": "C:\\Users\\adeil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adeil\\Documents\\EstudarC#\\Discount.Api\\obj\\",
+        "outputPath": "C:\\Users\\adeil\\Documents\\EstudarC#\\Microservices\\Discount.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adeil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.90, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
             },
             "Npgsql": {
               "target": "Package",

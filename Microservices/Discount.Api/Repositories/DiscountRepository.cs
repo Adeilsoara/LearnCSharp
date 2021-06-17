@@ -24,13 +24,12 @@ namespace Discount.Api.Repositories {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
             var coupon = await connection.QueryFirstOrDefaultAsync<Coupon>
-                ("SELECT * FROM Coupon WHERE ProductName = @ProductName", 
-                new { ProductName = productName});
+                ("SELECT * FROM Coupon WHERE ProductName = @ProductName",
+                new { ProductName = productName });
 
             if (coupon == null)
-                return new Coupon 
-                { ProductName = "No discount", Amount = 0, Description = "No discount Desc" };
-           
+                return new Coupon { ProductName = "No discount", Amount = 0, Description = "No discount Desc" };
+
             return coupon;
         }
 
@@ -38,7 +37,7 @@ namespace Discount.Api.Repositories {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
             var affectted = await connection.ExecuteAsync("INSERT INTO Coupon (ProductName, Description, Amount) VALUES (@ProductName, @Description, @Amount)",
-                new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount});
+                new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount });
 
             if (affectted == 0)
                 return false;
@@ -51,7 +50,7 @@ namespace Discount.Api.Repositories {
 
             var affectted = await connection.
                 ExecuteAsync("UPDATE FROM Coupon  WHERE ProductName = @ProductName",
-               new { ProductName = productName});
+               new { ProductName = productName });
 
             if (affectted == 0)
                 return false;

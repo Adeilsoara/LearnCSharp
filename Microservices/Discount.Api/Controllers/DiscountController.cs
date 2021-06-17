@@ -12,12 +12,12 @@ namespace Discount.Api.Controllers {
     [ApiController]
     public class DiscountController : ControllerBase {
         private readonly IDiscountRepository _repository;
-        
+
         public DiscountController(IDiscountRepository repository) {
             _repository = repository;
         }
 
-        [HttpGet("{productName}", Name ="GetDiscount")]
+        [HttpGet("{productName}", Name = "GetDiscount")]
         public async Task<ActionResult<Coupon>> GetDiscount(string productName) {
             var coupon = await _repository.GetDiscount(productName);
             return Ok(coupon);
@@ -34,7 +34,7 @@ namespace Discount.Api.Controllers {
             return Ok(await _repository.UpdateDiscount(coupon));
         }
 
-        [HttpDelete("{productName}", Name ="DeleteDiscount")]
+        [HttpDelete("{productName}", Name = "DeleteDiscount")]
         public async Task<ActionResult<Coupon>> DeleteDiscount(string productName) {
             return Ok(await _repository.DeleteDiscount(productName));
         }
