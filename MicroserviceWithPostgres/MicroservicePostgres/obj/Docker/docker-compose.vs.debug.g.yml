@@ -3,7 +3,6 @@ version: '3.4'
 services:
   discount.api:
     image: discountapi:dev
-    container_name: Discount.Api_1
     build:
       target: base
       labels:

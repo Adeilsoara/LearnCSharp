@@ -1,0 +1,15 @@
+services:
+  discount.api:
+    build:
+      context: C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres
+      dockerfile: Discount.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: discountapi
+    ports:
+    - target: 80
+  discountdb:
+    image: postgres
+  pgadmin:
+    image: dpage/pgadmin4
+version: '3.4'

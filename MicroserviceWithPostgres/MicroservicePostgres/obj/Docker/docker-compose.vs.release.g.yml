@@ -2,7 +2,6 @@ version: '3.4'
 
 services:
   discount.api:
-    container_name: Discount.Api_1
     build:
       labels:
         com.microsoft.created-by: "visual-studio"
