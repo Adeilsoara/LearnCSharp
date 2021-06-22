@@ -1,0 +1,17 @@
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Discount.Api.deps.json
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Discount.Api.runtimeconfig.json
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Discount.Api.runtimeconfig.dev.json
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\appsettings.Development.json
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\appsettings.json
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Discount.Api.exe
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Discount.Api.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Npgsql.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Dapper.dll
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\bin\Debug\Discount.Api.pdb
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\obj\Debug\docker-compose.dcproj.CopyComplete

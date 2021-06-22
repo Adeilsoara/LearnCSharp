@@ -34,9 +34,7 @@ namespace Discount.Api.Repositories {
         public async Task<bool> DeleteDiscount(string productName) {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
-            var affectted = await connection.ExecuteAsync
-                ("UPDATE FROM Coupon WHERE ProductName=@ProductName", 
-                new { ProductName = productName });
+            var affectted = await connection.ExecuteAsync("DELETE FROM Coupon WHERE ProductName=@ProductName", new { ProductName = productName });
 
             if (affectted == 0)
                 return false;
@@ -48,7 +46,7 @@ namespace Discount.Api.Repositories {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
             var coupon = await connection.QueryFirstOrDefaultAsync<Coupon>
-                ("SELECT * FROM Coupon WHERE ProductName = @ProductName", 
+                ("SELECT * FROM Coupon WHERE ProductName=@ProductName", 
                 new { ProductName = productName });
 
             if (coupon == null)
@@ -61,9 +59,9 @@ namespace Discount.Api.Repositories {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
             var affectted = await connection.
-                ExecuteAsync("UPDATE Coupon SET ProductName=@ProductName, Description@Description, Amount = @Amount" +
-                " WHERE Id = @Id",
-               new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount, Id = coupon.Id });
+                ExecuteAsync("UPDATE Coupon SET ProductName=@ProductName, Description=@Description, Amount=@Amount" +
+                " WHERE Id=@Id",
+                new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount, Id = coupon.Id });
 
             if (affectted == 0)
                 return false;
