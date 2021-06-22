@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Discount {
+namespace Discount.Api {
     public class Startup {
         public Startup(IConfiguration configuration) {
             Configuration = configuration;
@@ -35,7 +35,7 @@ namespace Discount {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Discount v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Discount.Api v1"));
             }
 
             app.UseRouting();

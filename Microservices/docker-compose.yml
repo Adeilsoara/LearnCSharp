@@ -6,10 +6,10 @@ services:
   
   basketdb:
     image: redis:alpine
-
+   
   discountdb:
-    image: postgres
-
+     image: postgres
+ 
   pgadmin:
     image: dpage/pgadmin4
 

@@ -19,20 +19,6 @@ namespace Discount.Api.Repositories {
         private NpgsqlConnection GetConnectionPostgreSQL() {
             return new NpgsqlConnection(_configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
         }
-
-        public async Task<Coupon> GetDiscount(string productName) {
-            NpgsqlConnection connection = GetConnectionPostgreSQL();
-
-            var coupon = await connection.QueryFirstOrDefaultAsync<Coupon>
-                ("SELECT * FROM Coupon WHERE ProductName = @ProductName",
-                new { ProductName = productName });
-
-            if (coupon == null)
-                return new Coupon { ProductName = "No discount", Amount = 0, Description = "No discount Desc" };
-
-            return coupon;
-        }
-
         public async Task<bool> CreateDiscount(Coupon coupon) {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
@@ -48,15 +34,24 @@ namespace Discount.Api.Repositories {
         public async Task<bool> DeleteDiscount(string productName) {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
-            var affectted = await connection.
-                ExecuteAsync("UPDATE FROM Coupon  WHERE ProductName = @ProductName",
-               new { ProductName = productName });
+            var affectted = await connection.ExecuteAsync("UPDATE FROM Coupon WHERE ProductName=@ProductName", new {ProductName = productName});
 
             if (affectted == 0)
                 return false;
 
             return true;
+        }
 
+        public async Task<Coupon> GetDiscount(string productName) {
+            NpgsqlConnection connection = GetConnectionPostgreSQL();
+
+            var coupon = await connection.QueryFirstOrDefaultAsync<Coupon>("SELECT * FROM Coupon WHERE ProductName = @ProductName", new { ProductName = productName });
+
+            if (coupon == null)
+                return new Coupon 
+                { ProductName = "No discount", Amount = 0, Description = "No discount Desc" };
+
+            return coupon;
         }
 
         public async Task<bool> UpdateDiscount(Coupon coupon) {

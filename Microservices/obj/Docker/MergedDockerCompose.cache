@@ -62,7 +62,7 @@ services:
     - published: 8002
       target: 80
   discountdb:
-    container_name: discount
+    container_name: discountdb
     environment:
       POSTGRES_DB: DiscountDb
       POSTGRES_PASSWORD: admin

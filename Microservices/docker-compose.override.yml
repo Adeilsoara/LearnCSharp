@@ -16,7 +16,7 @@ services:
       - "6379:6379"
 
   discountdb:
-    container_name: discount
+    container_name: discountdb
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
@@ -61,8 +61,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "DatabaseSettings:ConnectionString:Server=discountdb;Port=5432;Database=DiscountDb;User Id=postgres;Password=admin;"
-    depends_on:
+    depends_on: 
       - discountdb
     ports:
       - "8002:80"
-

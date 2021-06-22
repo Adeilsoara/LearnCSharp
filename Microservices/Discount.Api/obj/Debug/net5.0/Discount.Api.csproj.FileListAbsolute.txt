@@ -13,6 +13,7 @@ C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\bin\Debug\net5.0\N
 C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\obj\Debug\net5.0\Discount.Api.csproj.AssemblyReference.cache
 C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\obj\Debug\net5.0\Discount.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\obj\Debug\net5.0\Discount.Api.AssemblyInfoInputs.cache
 C:\Users\adeil\Documents\EstudarC#\Microservices\Discount.Api\obj\Debug\net5.0\Discount.Api.AssemblyInfo.cs
