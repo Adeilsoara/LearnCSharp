@@ -55,7 +55,7 @@ services:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      DatabaseSettings:ConnectionString:Server: discountdb;Port=5432;Database=DiscountDb;User
+      DatabaseSettings:ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;User
         Id=postgres;Password=admin;
     image: discountapi
     ports:

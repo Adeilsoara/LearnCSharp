@@ -30,7 +30,6 @@ namespace Discount.Api.Repositories {
 
             return true;
         }
-
         public async Task<bool> DeleteDiscount(string productName) {
             NpgsqlConnection connection = GetConnectionPostgreSQL();
 
