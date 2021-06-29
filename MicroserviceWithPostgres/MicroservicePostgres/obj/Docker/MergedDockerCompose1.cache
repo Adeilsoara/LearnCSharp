@@ -3,42 +3,18 @@ services:
     build:
       context: C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres
       dockerfile: Discount.Api/Dockerfile
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: Discount.Api
-      target: base
     container_name: discount.api
     depends_on:
       discountdb:
         condition: service_started
-    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      DOTNET_USE_POLLING_FILE_WATCHER: '1'
       DatabaseSettings:ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;User
         Id=admin;Password=admin;
-      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
-    image: discountapi:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
-        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/Discount.Api.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    image: discountapi
     ports:
     - published: 8002
       target: 80
-    tty: true
-    volumes:
-    - C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\Discount.Api:/app:rw
-    - C:\Users\adeil\vsdbg\vs2017u5:/remote_debugger:rw
-    - C:\Users\adeil\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
-    - C:\Users\adeil\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
-    - C:\Users\adeil\.nuget\packages:/root/.nuget/packages:ro
-    - C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres:/src:rw
   discountdb:
     container_name: discountdb
     environment:
