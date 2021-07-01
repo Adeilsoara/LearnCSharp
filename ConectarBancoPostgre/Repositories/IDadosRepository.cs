@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ConectarBancoPostgre.Repositories {
     public interface IDadosRepository {
         Task<Dados> GetDados(int gId);
+        Task<List<Dados>> GetDadosAll();
         Task<bool> CreateDados(Dados dados);
     }
 }

@@ -1,3 +1,4 @@
+using ConectarBancoPostgre.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,7 @@ namespace ConectarBancoPostgre {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
 
+            services.AddScoped<IDadosRepository, DadosRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ConectarBancoPostgre", Version = "v1" });
