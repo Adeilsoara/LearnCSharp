@@ -16,20 +16,6 @@ namespace Discount.Api.Repositories {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
-        public async Task<bool> Notification() {
-
-            NpgsqlConnection connection = GetConnectionPostgreSQL();
-            await connection.OpenAsync();
-
-            //e.Payload is string representation of JSON we constructed in NotifyOnDataChange() function
-            connection.Notification += (o, e) => Console.WriteLine("Received notification: " + e.Payload);
-
-            await using (var cmd = new NpgsqlCommand("LISTEN datachange;", connection))
-                cmd.ExecuteNonQuery();
-
-            while (true)
-                connection.Wait();
-        }
         private NpgsqlConnection GetConnectionPostgreSQL() {
 
             return new NpgsqlConnection(_configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
