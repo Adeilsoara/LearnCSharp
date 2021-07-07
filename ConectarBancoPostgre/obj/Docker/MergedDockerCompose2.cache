@@ -1,0 +1,18 @@
+services:
+  conectarbanco:
+    image: postgres
+  conectarbancopostgre:
+    build:
+      context: C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: conectarbancopostgre
+    ports:
+    - target: 80
+  pgadmin:
+    image: dbpage/pgadmin4
+version: '3.4'
+volumes:
+  pgadmin_data: {}
+  postgres_data: {}

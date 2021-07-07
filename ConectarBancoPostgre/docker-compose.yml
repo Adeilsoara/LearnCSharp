@@ -1,8 +1,17 @@
 version: '3.4'
 
 services:
+  conectarbanco:
+     image: postgres
+  pgadmin:
+     image: dbpage/pgadmin4
+
   conectarbancopostgre:
     image: ${DOCKER_REGISTRY-}conectarbancopostgre
     build:
       context: .
       dockerfile: Dockerfile
+
+volumes:
+  postgres_data:
+  pgadmin_data:
