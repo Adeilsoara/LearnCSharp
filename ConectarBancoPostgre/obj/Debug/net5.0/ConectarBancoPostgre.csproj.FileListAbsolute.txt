@@ -1,5 +1,4 @@
 C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre\bin\Debug\net5.0\appsettings.json
 C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre\bin\Debug\net5.0\ConectarBancoPostgre.exe
 C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre\bin\Debug\net5.0\ConectarBancoPostgre.deps.json
 C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre\bin\Debug\net5.0\ConectarBancoPostgre.runtimeconfig.json
