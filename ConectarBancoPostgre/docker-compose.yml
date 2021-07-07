@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  conectarbancopostgre:
+    image: ${DOCKER_REGISTRY-}conectarbancopostgre
+    build:
+      context: .
+      dockerfile: Dockerfile
