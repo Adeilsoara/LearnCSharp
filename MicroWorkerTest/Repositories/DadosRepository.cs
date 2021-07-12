@@ -26,7 +26,7 @@ namespace MicroWorkerTest.Repositories {
 
         public async Task<Dados> GetDados(int gId) {
             NpgsqlConnection connection = GetConnectionStringSQL();
-            string query = "SELECT * FROM SELECT * FROM ponto_importado_corrigido WHERE gid = @gId";
+            string query = "SELECT * FROM ponto_importado_corrigido WHERE gid = @gId";
             Dados dado = await connection.QueryFirstOrDefaultAsync<Dados>(sql: query, param: new { gId });
 
             return dado;
@@ -34,7 +34,7 @@ namespace MicroWorkerTest.Repositories {
 
         public async Task<List<Dados>> GetDadosAll() {
             NpgsqlConnection connection = GetConnectionStringSQL();
-            string query = "SELECT gid, endereco FROM ponto_importado_corrigido LIMIT 5; ";
+            string query = "SELECT gid, endereco FROM ponto_importado_corrigido LIMIT 5;";
             List<Dados> lista = (await connection.QueryAsync<Dados>(sql: query)).ToList();
             return lista;
 

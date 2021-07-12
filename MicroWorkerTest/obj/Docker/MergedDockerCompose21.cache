@@ -1,0 +1,71 @@
+services:
+  microworkerdb:
+    container_name: postgisdb
+    environment:
+      POSTGRES_DBNAME: MicroWorkerDb
+      POSTGRES_MULTIPLE_EXTENSIONS: postgis,hstore,postgis_topology,postgis_raster,pgrouting
+      POSTGRES_PASS: admin
+      POSTGRES_USER: postgres
+    image: kartoza/postgis:13.0
+    ports:
+    - published: 5432
+      target: 5432
+    restart: always
+    volumes:
+    - postgres_data:/var/lib/postgresql/data:rw
+  microworkertest:
+    build:
+      context: C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest
+      dockerfile: Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MicroWorkerTest
+      target: base
+    container_name: microworker
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      DatabaseSettings:ConnectionString: Server=microworker;Port=5432;Database=MicroWorkerDb;User
+        Id=postgres;Password=admin;
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: microworkertest:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/MicroWorkerTest.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8001
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest:/app:rw
+    - C:\Users\adeil\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\adeil\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\adeil\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\adeil\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest:/src:rw
+  pgadmin:
+    container_name: pgadmin
+    depends_on:
+      microworkerdb:
+        condition: service_started
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@adeilson.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    image: dpage/pgadmin4
+    ports:
+    - published: 5050
+      target: 80
+    restart: always
+    volumes:
+    - pgadmin_data:/root/.pgadmin:rw
+version: '3.4'
+volumes:
+  pgadmin_data: {}
+  postgres_data: {}

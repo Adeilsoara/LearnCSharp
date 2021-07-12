@@ -1,8 +1,40 @@
 version: '3.4'
 
 services:
+  microworkerdb:
+    container_name: postgisdb
+    image: kartoza/postgis:13.0
+    environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASS=admin
+        - POSTGRES_DBNAME=MicroWorkerDb
+        - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology,postgis_raster,pgrouting
+    restart: always
+    ports:
+        - "5432:5432"
+    volumes:
+        - postgres_data:/var/lib/postgresql/data
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@adeilson.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    restart: always
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/root/.pgadmin
+    depends_on:
+      - microworkerdb
+
   microworkertest:
     image: ${DOCKER_REGISTRY-}microworkertest
     build:
       context: .
       dockerfile: Dockerfile
+
+volumes:
+  postgres_data:
+  pgadmin_data:

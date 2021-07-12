@@ -1,0 +1,15 @@
+services:
+  microworkerdb:
+    image: kartoza/postgis:13.0
+  microworkertest:
+    build:
+      context: C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: microworkertest
+    ports:
+    - target: 80
+  pgadmin:
+    image: dpage/pgadmin4
+version: '3.4'

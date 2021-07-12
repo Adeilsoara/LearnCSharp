@@ -2,7 +2,6 @@ version: '3.4'
 
 services:
   microworkertest:
-    container_name: MicroWorkerTest_1
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

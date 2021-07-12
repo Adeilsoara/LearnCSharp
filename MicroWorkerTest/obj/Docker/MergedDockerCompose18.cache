@@ -1,0 +1,46 @@
+services:
+  microworkerdb:
+    container_name: postgisdb
+    environment:
+      POSTGRES_DBNAME: MicroWorkerDb
+      POSTGRES_MULTIPLE_EXTENSIONS: postgis,hstore,postgis_topology,postgis_raster,pgrouting
+      POSTGRES_PASS: admin
+      POSTGRES_USER: postgres
+    image: kartoza/postgis:13.0
+    ports:
+    - published: 5432
+      target: 5432
+    restart: always
+    volumes:
+    - postgres_data:/var/lib/postgresql/data:rw
+  microworkertest:
+    build:
+      context: C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest
+      dockerfile: Dockerfile
+    container_name: microworker
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: Server=microworker;Port=5432;Database=MicroWorkerDb;User
+        Id=postgres;Password=admin;
+    image: microworkertest
+    ports:
+    - target: 80
+  pgadmin:
+    container_name: pgadmin
+    depends_on:
+      microworkerdb:
+        condition: service_started
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@adeilson.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    image: dpage/pgadmin4
+    ports:
+    - published: 5050
+      target: 80
+    restart: always
+    volumes:
+    - pgadmin_data:/root/.pgadmin:rw
+version: '3.4'
+volumes:
+  pgadmin_data: {}
+  postgres_data: {}

@@ -3,7 +3,6 @@ version: '3.4'
 services:
   microworkertest:
     image: microworkertest:dev
-    container_name: MicroWorkerTest_1
     build:
       target: base
       labels:
