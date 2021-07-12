@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Dapper;
+using Microsoft.Extensions.Configuration;
 using MicroWorkerTest.Entities;
 using Npgsql;
 using System;
@@ -24,11 +25,19 @@ namespace MicroWorkerTest.Repositories {
         }
 
         public async Task<Dados> GetDados(int gId) {
-            throw new NotImplementedException();
+            NpgsqlConnection connection = GetConnectionStringSQL();
+            string query = "SELECT * FROM SELECT * FROM ponto_importado_corrigido WHERE gid = @gId";
+            Dados dado = await connection.QueryFirstOrDefaultAsync<Dados>(sql: query, param: new { gId });
+
+            return dado;
         }
 
         public async Task<List<Dados>> GetDadosAll() {
-            throw new NotImplementedException();
+            NpgsqlConnection connection = GetConnectionStringSQL();
+            string query = "SELECT gid, endereco FROM ponto_importado_corrigido LIMIT 5; ";
+            List<Dados> lista = (await connection.QueryAsync<Dados>(sql: query)).ToList();
+            return lista;
+
         }
     }
 }
