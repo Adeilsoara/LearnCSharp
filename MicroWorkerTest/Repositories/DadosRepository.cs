@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MicroWorkerTest.Entities;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,15 +15,19 @@ namespace MicroWorkerTest.Repositories {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
-        public Task<bool> CreateDados(Dados dados) {
+        private NpgsqlConnection GetConnectionStringSQL() {
+            return new NpgsqlConnection(_configuration.GetValue<string>
+                ("DatabaseSettings:ConnectionString"));
+        }
+        public async Task<bool> CreateDados(Dados dados) {
             throw new NotImplementedException();
         }
 
-        public Task<Dados> GetDados(int gId) {
+        public async Task<Dados> GetDados(int gId) {
             throw new NotImplementedException();
         }
 
-        public Task<List<Dados>> GetDadosAll() {
+        public async Task<List<Dados>> GetDadosAll() {
             throw new NotImplementedException();
         }
     }
