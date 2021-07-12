@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microworkertest:
+    image: ${DOCKER_REGISTRY-}microworkertest
+    build:
+      context: .
+      dockerfile: Dockerfile
