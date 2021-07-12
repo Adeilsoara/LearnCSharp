@@ -1,11 +1,45 @@
 services:
+  conectarbanco:
+    container_name: conectarbancopostgres
+    environment:
+      POSTGRES_DB: Teste
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: postgres
+    image: postgres
+    ports:
+    - published: 5432
+      target: 5432
+    restart: always
+    volumes:
+    - postgres_data:/var/lib/postgresql/data:rw
   conectarbancopostgre:
     build:
       context: C:\Users\adeil\Documents\EstudarC#\ConectarBancoPostgre
       dockerfile: Dockerfile
+    container_name: conectarbanco.api
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: Server=conectar;Port=5432;Database=Teste;User
+        Id=postgres;Password=admin;
     image: conectarbancopostgre
     ports:
-    - target: 80
+    - published: 8002
+      target: 80
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@adeilson.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    image: dpage/pgadmin4
+    ports:
+    - published: 5050
+      target: 80
+    restart: always
+    volumes:
+    - pgadmin_data:/root/.pgadmin:rw
+  postgis:
+    image: cmihai/postgis
 version: '3.4'
+volumes:
+  pgadmin_data: {}
+  postgres_data: {}

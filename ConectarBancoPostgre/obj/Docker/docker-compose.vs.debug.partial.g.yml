@@ -3,7 +3,6 @@ version: '3.4'
 services:
   conectarbancopostgre:
     image: conectarbancopostgre:dev
-    container_name: ConectarBancoPostgre
     build:
       target: base
       labels:
