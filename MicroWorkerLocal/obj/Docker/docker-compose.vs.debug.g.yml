@@ -3,7 +3,6 @@ version: '3.4'
 services:
   microworkerlocal:
     image: microworkerlocal:dev
-    container_name: MicroWorkerLocal
     build:
       target: base
       labels:

@@ -1,8 +1,33 @@
 version: '3.4'
 
 services:
+  conectarbanco:
+    container_name: conectarbancopostgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=teste
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@adeilson.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    restart: always
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/root/.pgadmin
+
   microworkerlocal:
+    container_name: conectarbanco.worker
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=Server=conectar;Port=5432;Database=teste;User Id=postgres;Password=admin;"
     ports:
-      - "80"
+      - "8002:80"

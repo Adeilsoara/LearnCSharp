@@ -1,8 +1,18 @@
 version: '3.4'
 
 services:
+  conectarbanco:
+    image: postgres
+  postgisdb:
+    image: kartoza/postgis:13.0
+  pgadmin:
+    image: dpage/pgadmin4
   microworkerlocal:
     image: ${DOCKER_REGISTRY-}microworkerlocal
     build:
       context: .
       dockerfile: Dockerfile
+
+volumes:
+  postgres_data:
+  pgadmin_data:
