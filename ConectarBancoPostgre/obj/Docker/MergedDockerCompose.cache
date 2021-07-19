@@ -37,8 +37,6 @@ services:
     restart: always
     volumes:
     - pgadmin_data:/root/.pgadmin:rw
-  postgis:
-    image: cmihai/postgis
 version: '3.4'
 volumes:
   pgadmin_data: {}

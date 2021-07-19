@@ -16,15 +16,12 @@ namespace ConectarBancoPostgre.Repositories {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
-     
         private NpgsqlConnection GetConnectionStringSQL() {
             
             return new NpgsqlConnection(_configuration.GetValue<string>
                 ("DatabaseSettings:ConnectionString"));
         }
   
-
-
         public async Task<Dados> GetDados(int gId) {
             // using var connection = new NpgsqlConnection(_configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
             NpgsqlConnection connection = GetConnectionStringSQL();
