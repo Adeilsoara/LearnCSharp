@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microworkerlocal:
+    image: ${DOCKER_REGISTRY-}microworkerlocal
+    build:
+      context: .
+      dockerfile: Dockerfile
