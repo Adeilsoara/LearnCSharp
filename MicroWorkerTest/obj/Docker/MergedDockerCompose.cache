@@ -7,16 +7,23 @@ services:
       POSTGRES_PASS: admin
       POSTGRES_USER: postgres
     image: kartoza/postgis:13.0
+    networks:
+      default: null
     ports:
-    - published: 5432
+    - mode: ingress
       target: 5432
+      published: 5432
+      protocol: tcp
     restart: always
     volumes:
-    - postgres_data:/var/lib/postgresql/data:rw
+    - type: volume
+      source: postgres_data
+      target: /var/lib/postgresql/data
+      volume: {}
   microworkertest:
     build:
       context: C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest
-      dockerfile: Dockerfile
+      dockerfile: C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest\Dockerfile
     container_name: microworker
     depends_on:
       pgadmin:
@@ -26,9 +33,13 @@ services:
       DatabaseSettings:ConnectionString: Server=microworker;Port=5442;Database=MicroWorkerDb;User
         Id=postgres;Password=admin;
     image: microworkertest
+    networks:
+      default: null
     ports:
-    - published: 8001
+    - mode: ingress
       target: 80
+      published: 8001
+      protocol: tcp
   pgadmin:
     container_name: pgadmin
     depends_on:
@@ -38,15 +49,28 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@adeilson.com
       PGADMIN_DEFAULT_PASSWORD: admin
     image: dpage/pgadmin4
+    networks:
+      default: null
     ports:
-    - published: 5050
+    - mode: ingress
       target: 80
+      published: 5050
+      protocol: tcp
     restart: always
     volumes:
-    - pgadmin_data:/root/.pgadmin:rw
+    - type: volume
+      source: pgadmin_data
+      target: /root/.pgadmin
+      volume: {}
   postgisdb:
     image: kartoza/postgis:13.0
-version: '3.4'
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose14836856770398241115_default
 volumes:
-  pgadmin_data: {}
-  postgres_data: {}
+  pgadmin_data:
+    name: dockercompose14836856770398241115_pgadmin_data
+  postgres_data:
+    name: dockercompose14836856770398241115_postgres_data

@@ -2,7 +2,7 @@ services:
   discount.api:
     build:
       context: C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres
-      dockerfile: Discount.Api/Dockerfile
+      dockerfile: C:\Users\adeil\Documents\EstudarC#\MicroserviceWithPostgres\MicroservicePostgres\Discount.Api\Dockerfile
     container_name: discount.api
     depends_on:
       discountdb:
@@ -12,9 +12,13 @@ services:
       DatabaseSettings:ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;User
         Id=admin;Password=admin;
     image: discountapi
+    networks:
+      default: null
     ports:
-    - published: 8002
+    - mode: ingress
       target: 80
+      published: 8002
+      protocol: tcp
   discountdb:
     container_name: discountdb
     environment:
@@ -22,25 +26,43 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_USER: admin
     image: postgres
+    networks:
+      default: null
     ports:
-    - published: 5432
+    - mode: ingress
       target: 5432
+      published: 5432
+      protocol: tcp
     restart: always
     volumes:
-    - postgres_data:/var/lib/postgresql/data:rw
+    - type: volume
+      source: postgres_data
+      target: /var/lib/postgresql/data
+      volume: {}
   pgadmin:
     container_name: pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@adeilson.com
       PGADMIN_DEFAULT_PASSWORD: admin
     image: dpage/pgadmin4
+    networks:
+      default: null
     ports:
-    - published: 5050
+    - mode: ingress
       target: 80
+      published: 5050
+      protocol: tcp
     restart: always
     volumes:
-    - pgadmin_data:/root/.pgadmin:rw
-version: '3.4'
+    - type: volume
+      source: pgadmin_data
+      target: /root/.pgadmin
+      volume: {}
+networks:
+  default:
+    name: dockercompose16036899975912118813_default
 volumes:
-  pgadmin_data: {}
-  postgres_data: {}
+  pgadmin_data:
+    name: dockercompose16036899975912118813_pgadmin_data
+  postgres_data:
+    name: dockercompose16036899975912118813_postgres_data

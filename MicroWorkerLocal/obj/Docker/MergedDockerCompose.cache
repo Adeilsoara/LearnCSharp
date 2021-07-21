@@ -1,11 +1,70 @@
 services:
+  conectarbanco:
+    container_name: conectarbancopostgres
+    environment:
+      POSTGRES_DB: teste
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: postgres
+    image: postgres
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: 5432
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: postgres_data
+      target: /var/lib/postgresql/data
+      volume: {}
   microworkerlocal:
     build:
       context: C:\Users\adeil\Documents\EstudarC#\MicroWorkerLocal
-      dockerfile: Dockerfile
+      dockerfile: C:\Users\adeil\Documents\EstudarC#\MicroWorkerLocal\Dockerfile
+      network: host
+    container_name: conectarbanco.worker
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: Server=conectar;Port=5432;Database=teste;User
+        Id=postgres;Password=admin;
     image: microworkerlocal
+    networks:
+      default: null
     ports:
-    - target: 80
-version: '3.4'
+    - mode: ingress
+      target: 80
+      published: 8002
+      protocol: tcp
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@adeilson.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    image: dpage/pgadmin4
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 5050
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: pgadmin_data
+      target: /root/.pgadmin
+      volume: {}
+  postgisdb:
+    image: kartoza/postgis:13.0
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose14660984050419794588_default
+volumes:
+  pgadmin_data:
+    name: dockercompose14660984050419794588_pgadmin_data
+  postgres_data:
+    name: dockercompose14660984050419794588_postgres_data

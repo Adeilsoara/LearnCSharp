@@ -12,6 +12,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      network: host
 
 volumes:
   postgres_data:
