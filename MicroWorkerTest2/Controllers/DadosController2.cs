@@ -18,10 +18,12 @@ namespace MicroWorkerTest2.Controllers {
             _repository = repository;
         }
 
+      
         [HttpPost]
-        public async Task<ActionResult<Dados2>> CreateDados([FromBody] Dados2 dados2) {
-            await _repository.CreateDados(dados2);
-            return CreatedAtRoute("GetDados", new { dadosGId = dados2.GId }, dados2);
+        public async Task<ActionResult<Dados2>> CreateDados([FromBody] Dados2 dados) {
+            await _repository.CreateDados(dados);
+            //return CreatedAtRoute("GetDados", new { dadosGId = dados.GId }, dados);
+            return Ok(dados);
         }
     }
 }

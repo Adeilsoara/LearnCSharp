@@ -27,3 +27,5 @@ C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest2\obj\Debug\net5.0\MicroWorker
 C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest2\obj\Debug\net5.0\ref\MicroWorkerTest2.dll
 C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest2\obj\Debug\net5.0\MicroWorkerTest2.pdb
 C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest2\obj\Debug\net5.0\MicroWorkerTest2.genruntimeconfig.cache
+C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest2\bin\Debug\net5.0\Dapper.dll
+C:\Users\adeil\Documents\EstudarC#\MicroWorkerTest2\bin\Debug\net5.0\Npgsql.dll
