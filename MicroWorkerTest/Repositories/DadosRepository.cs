@@ -5,6 +5,7 @@ using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MicroWorkerTest.Repositories {
@@ -39,5 +40,17 @@ namespace MicroWorkerTest.Repositories {
             return lista;
 
         }
+
+        public void BuscaContinua() {
+            Thread th = new Thread(() => {
+                while (true) {
+                    _ = GetDadosAll();
+                }
+            });
+
+            th.Start();
+
+        }
+
     }
 }

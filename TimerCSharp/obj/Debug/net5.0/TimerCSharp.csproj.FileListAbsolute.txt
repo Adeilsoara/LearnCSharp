@@ -1,0 +1,16 @@
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\TimerCSharp.exe
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\TimerCSharp.deps.json
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\TimerCSharp.runtimeconfig.json
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\TimerCSharp.runtimeconfig.dev.json
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\TimerCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\ref\TimerCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\bin\Debug\net5.0\TimerCSharp.pdb
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.csproj.AssemblyReference.cache
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.AssemblyInfoInputs.cache
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.AssemblyInfo.cs
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.csproj.CoreCompileInputs.cache
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\ref\TimerCSharp.dll
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.pdb
+C:\Users\adeil\Documents\EstudarC#\TimerCSharp\obj\Debug\net5.0\TimerCSharp.genruntimeconfig.cache
