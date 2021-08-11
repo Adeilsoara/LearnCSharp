@@ -1,0 +1,16 @@
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\AbstratctFactory.exe
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\AbstratctFactory.deps.json
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\AbstratctFactory.runtimeconfig.json
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\AbstratctFactory.runtimeconfig.dev.json
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\AbstratctFactory.dll
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\ref\AbstratctFactory.dll
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\bin\Debug\net5.0\AbstratctFactory.pdb
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.csproj.AssemblyReference.cache
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.AssemblyInfoInputs.cache
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.AssemblyInfo.cs
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.csproj.CoreCompileInputs.cache
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.dll
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\ref\AbstratctFactory.dll
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.pdb
+C:\Users\adeil\Documents\EstudarC#\DesignPatternersCSharp\DesignPatterner\AbstratctFactory\obj\Debug\net5.0\AbstratctFactory.genruntimeconfig.cache
