@@ -41,16 +41,19 @@ namespace MicroWorkerTest.Repositories {
 
         }
 
-        public void BuscaContinua() {
-            Thread th = new Thread(() => {
-                while (true) {
-                    _ = GetDadosAll();
-                }
-            });
+        public async Task Notificar() {
+            NpgsqlConnection connection = GetConnectionStringSQL();
+            await connection.OpenAsync();
 
-            th.Start();
+            connection.Notification += (o, e) => Console.WriteLine("Recebeu uma notificação" + e.Payload);
 
+            await using (var cmd = new NpgsqlCommand("LISTEN datachange;", connection))
+                cmd.ExecuteNonQuery();
+
+            while (true)
+                connection.Wait();
         }
+    
 
     }
 }
